@@ -1,0 +1,8 @@
+[package]
+
+name = "demo_sidechain"
+version = "1.0.0"
+
+[dependencies]
+bitcoin = "0.27"
+secp256k1 = "0.22"
