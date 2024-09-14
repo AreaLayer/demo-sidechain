@@ -41,7 +41,7 @@ This sidechain is designed to:
 ### **Steps to Run the Sidechain**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-repo/sidechain.git
+   git clone https://github.com/AreaLayer/demo-sidechain.git
    cd sidechain
    ```
 
