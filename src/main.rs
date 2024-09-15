@@ -1,4 +1,4 @@
-use bitcoin::hashes::sha256d::Hash;
+use bitcoin::hashes::{sha256d::Hash, Hash};
 
 #[allow(dead_code)]
 struct SidechainBlock {
@@ -18,8 +18,8 @@ impl SidechainBlock {
     fn new(aux_pow: AuxPoW) -> Self {
         Self {
             version: 0,                           // Version of the block
-            prev_blockhash: Hash::all_zeros(),     // Placeholder, should be updated with the actual hash
-            merkle_root: Hash::all_zeros(),        // Placeholder, should be updated with the real Merkle root
+            prev_blockhash: Hash::default(),      // Placeholder, should be updated with the actual hash
+            merkle_root: Hash::default(),         // Placeholder, should be updated with the real Merkle root
             time: 0,                              // Timestamp of the block
             bits: 0,                              // Difficulty target
             nonce: 0,                             // Nonce for Proof of Work
@@ -27,7 +27,6 @@ impl SidechainBlock {
             aux_pow,                              // Auxiliary Proof of Work
         }
     }
-
     // Additional method to update the prev_blockhash
     fn update_prev_blockhash(&mut self, hash: Hash) {
         self.prev_blockhash = hash;
