@@ -95,3 +95,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## **Acknowledgments**
 - **Bitcoin Core**: This project heavily relies on Bitcoin Core for anchoring and security.
 - **rust-bitcoin**: The Rust library for Bitcoin protocol support.
+
+
+## Futures development
+
+- Compatible with BitVM
+- Others Opcodes (OP_CHECKSIG, OP_CLTV , OP_CSV, OP_IF / OP_ELSE, OP_CHECKTEMPLATEVERIFY)
+- Timelock with Lightning Network
+- Scriptless
+- Taproot
