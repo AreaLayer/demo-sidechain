@@ -2,7 +2,12 @@
 
 name = "demo_sidechain"
 version = "1.0.0"
+edition = "2021"
 
 [dependencies]
 bitcoin = "0.27"
 secp256k1 = "0.22"
+
+[lib]
+
+main = "src/main.rs"
