@@ -18,6 +18,7 @@ This sidechain is designed to:
 - **Bitcoin-anchored security**: Sidechain blocks are periodically anchored in Bitcoin blocks for additional security and tamper-proofing.
 - **Rust implementation**: The sidechain is built using Rust, leveraging the `rust-bitcoin` crate for interaction with the Bitcoin protocol.
 - **No asset peg**: The sidechain is non-peg, meaning there is no two-way transfer of assets between Bitcoin and the sidechain.
+- **No soft fork**: The sidechain works without need soft forks and is compatible with them when happen some soft fork in the future
 
 ## **Components**
 1. **Sidechain Block Structure**: The sidechain block is similar to a Bitcoin block but contains a reference to a Bitcoin block hash via the merge mining (AuxPoW) mechanism.
