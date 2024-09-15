@@ -1,5 +1,6 @@
 use bitcoin::blockdata::block::BlockHeader;
 use bitcoin::hashes::sha256d::Hash;
+use bitcoin::TaprootMerkleBranch;
 
 struct SidechainBlockHeader {
     version: u32,
@@ -8,6 +9,7 @@ struct SidechainBlockHeader {
     time: u32,
     bits: u32,
     nonce: u32,
+    taproot: u128,
     aux_pow: AuxPoW,  // Data structure for AuxPoW
 }
 
