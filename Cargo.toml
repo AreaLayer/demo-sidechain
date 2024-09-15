@@ -11,10 +11,3 @@ secp256k1 = "0.22"
 [[bin]]
 name = "main"
 path = "src/main.rs"
-
-[workspace]
-members = [
-    "main",   # This should be the directory paths to the member crates
-    "block",
-    "rpc"
-]
