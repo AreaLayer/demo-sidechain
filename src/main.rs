@@ -14,21 +14,32 @@ struct SidechainBlock {
 
 #[allow(dead_code)]
 impl SidechainBlock {
-    // Add a constructor or methods that use AuxPoW
+    // Constructor for creating a new SidechainBlock with AuxPoW
     fn new(aux_pow: AuxPoW) -> Self {
         Self {
-            version: 0,
-            prev_blockhash: Hash::all_zeros(),
-            merkle_root: Hash::all_zeros(),
-            time: 0,
-            bits: 0,
-            nonce: 0,
-            taproot_merkele_branch: 0,
-            aux_pow,
+            version: 0,                           // Version of the block
+            prev_blockhash: Hash::all_zeros(),     // Placeholder, should be updated with the actual hash
+            merkle_root: Hash::all_zeros(),        // Placeholder, should be updated with the real Merkle root
+            time: 0,                              // Timestamp of the block
+            bits: 0,                              // Difficulty target
+            nonce: 0,                             // Nonce for Proof of Work
+            taproot_merkele_branch: 0,            // Placeholder, update if Taproot is needed
+            aux_pow,                              // Auxiliary Proof of Work
         }
     }
+
+    // Additional method to update the prev_blockhash
+    fn update_prev_blockhash(&mut self, hash: Hash) {
+        self.prev_blockhash = hash;
+    }
+
+    // Additional method to update the merkle_root
+    fn update_merkle_root(&mut self, merkle_root: Hash) {
+        self.merkle_root = merkle_root;
+    }
 }
+
 struct AuxPoW {
     coinbase_transaction: Vec<u8>,      // Coinbase transaction referencing sidechain work
     merkle_branch: Vec<Hash>,           // Merkle branch linking sidechain to Bitcoin block
-}
+};
