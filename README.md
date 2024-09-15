@@ -1,6 +1,10 @@
-# **Rust Bitcoin Sidechain**
+# **Rust Bitcoin Sidechain**⚡
 
 This project implements a **Bitcoin-anchored sidechain** written in Rust, leveraging Bitcoin's **Proof-of-Work (PoW)** consensus mechanism through **merge mining**. The sidechain is fully anchored to Bitcoin Core, but without a two-way peg for asset transfer. Instead, it inherits the security of Bitcoin through periodic anchoring and merge mining.
+
+Idea inspired by RSK and redesing by Rsync
+
+Developed by 22388o
 
 ## **Overview**
 
