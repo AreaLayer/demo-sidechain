@@ -1,4 +1,4 @@
-use bitcoin::hashes::{sha256d::Hash, Hash};
+use bitcoin::hashes::{sha256d::Hash};
 
 #[allow(dead_code)]
 struct SidechainBlock {
