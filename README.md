@@ -72,8 +72,8 @@ This sidechain is designed to:
 ## **Development**
 
 ### **Modifying the Code**
-- The sidechain block structure and the AuxPoW (merge mining) mechanism are located in the `src/block.rs` and `src/mining.rs` files, respectively.
-- The anchoring mechanism is implemented in `src/anchor.rs`, which includes the logic for committing sidechain headers to Bitcoin.
+- The sidechain block structure and the AuxPoW (merge mining) mechanism are located in the `src/block.rs` and `src/main.rs` files, respectively.
+- The anchoring mechanism is implemented in `src/main.rs`, which includes the logic for committing sidechain headers to Bitcoin.
 
 ### **Testing**
 To test the sidechain in regtest mode:
