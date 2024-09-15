@@ -11,3 +11,10 @@ secp256k1 = "0.22"
 [lib]
 
 main = "src/main.rs"
+
+[workspace]
+members = [
+"main",
+"block",
+"rpc"
+]
